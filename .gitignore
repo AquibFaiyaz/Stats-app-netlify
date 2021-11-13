@@ -24,3 +24,5 @@ yarn-error.log*
 
 #db connect
 /db/firebase-config.js
+
+.env
