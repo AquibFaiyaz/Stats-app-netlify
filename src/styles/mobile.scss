@@ -1,0 +1,28 @@
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 58%;
+  }
+
+  .mean,
+  .median,
+  .mode,
+  .standardDev {
+    h2 {
+      min-width: 60%;
+      //   height: 30vh;
+    }
+  }
+
+  .data-logo {
+    width: 18vw;
+  }
+
+  .error-modal {
+    width: 60vw;
+    height: 20vh;
+
+    .modal-msg {
+      margin-top: 4rem;
+    }
+  }
+}

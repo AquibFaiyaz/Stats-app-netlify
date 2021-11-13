@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: rgb(214, 163, 74);
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+.metrics {
+  width: 70vw;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+
+  .mean,
+  .median,
+  .mode,
+  .standardDev {
+    min-height: 30vh;
+    width: 30vw;
+    margin: 1rem auto;
+    background: rgb(207, 239, 250);
+
+    border-radius: 5px;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
+
+    .underline {
+      width: 5vw;
+      height: 1.2vh;
+      margin: 0.2rem 1rem;
+      background: black;
+    }
+
+    h1,
+    h2 {
+      margin: 1rem 1rem 0.2rem 1rem;
+    }
+    h2 {
+      background: lightcoral;
+      width: 40%;
+      padding: 0.5rem;
+      border-radius: 3px;
+    }
+  }
+}
+
+.data-logo {
+  width: 11vw;
+  margin: auto;
+  // background: lightcoral;
+  padding: 0.5rem;
+  padding-left: 0.9rem;
+  border-radius: 4px;
+}
+
+.dataSet {
+  width: 40vw;
+  min-height: 10vh;
+
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  li {
+    list-style: none;
+    margin: 0.5rem;
+    background: lightblue;
+    padding: 0.3rem 0.6rem;
+    border-radius: 2px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+  }
+}
+
+.change {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 5rem;
+
+  .change-btn {
+    padding: 0.4rem 0.8rem;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: none;
+    background: blue;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+.value-form {
+  input {
+    margin: 0.5rem 0;
+    padding: 0.2rem 0.8rem;
+  }
+
+  .value-btn {
+    padding: 0.2rem;
+    border-radius: 2px;
+    border: none;
+    background: blue;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+}
+
+.error-modal {
+  background: white;
+  width: 33vw;
+  height: 28vh;
+  margin: 12rem auto;
+  color: black;
+  border-radius: 7px;
+  border: 0.1px solid black;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+
+  .modal-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .modal-msg {
+    font-size: 1.2rem;
+    margin-top: 3.2rem;
+  }
+  .modal-btn {
+    margin: 1rem;
+    width: 5rem;
+    height: 2rem;
+    background: gray;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}
+
+@import "./mobile.scss";
