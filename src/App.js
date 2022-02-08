@@ -62,7 +62,7 @@ function App() {
         <div className="metrics">
           <Mean dataSet={dataSet} mean={mean} setMean={setMean} />
           <Median dataSet={dataSet} median={median} setMedian={setMedian} />
-          <Mode dataSet={dataSet} mode={mode} setMode={setMode} />
+          {/* <Mode dataSet={dataSet} mode={mode} setMode={setMode} /> */}
           <StandardDev
             dataSet={dataSet}
             standardDev={standardDev}
