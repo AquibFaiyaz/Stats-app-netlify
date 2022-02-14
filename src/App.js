@@ -43,6 +43,9 @@ function App() {
     getDataSets();
   }, []);
 
+  let myName = process.env.REACT_APP_NAME;
+  console.log(myName);
+
   //Handlers
   const handleChange = () => {
     setIndex((index + 1) % dataI.length);
