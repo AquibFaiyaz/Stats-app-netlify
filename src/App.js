@@ -44,7 +44,6 @@ function App() {
   }, []);
 
   let myName = process.env.REACT_APP_NAME;
-  console.log(myName);
 
   //Handlers
   const handleChange = () => {
@@ -79,7 +78,7 @@ function App() {
             Change Data
           </button>
 
-          {/* <AddValue
+          <AddValue
             value={value}
             setValue={setValue}
             dataSet={dataSet}
@@ -88,7 +87,7 @@ function App() {
             setError={setError}
             setMsg={setMsg}
             msg={msg}
-          /> */}
+          />
         </div>
         <ErrorModal error={error} setError={setError} msg={msg} />
       </div>
